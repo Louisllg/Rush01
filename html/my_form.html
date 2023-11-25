@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Rush 1</title>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header>
+            <div class="header">
+                <div class="header__logo">
+                    <img src="../img/logo.png" alt="logo">
+                </div>
+                <div class="header__title">
+                    <h1>Formulaire</h1>
+                </div>
+            </div>
+        </header>
+        <!--MAIN-->
+        <form action="my_form.html" method="POST">
+
+            <div>
+                <label for="sexe">Sexe:</label>
+                <input type="radio" id="homme" name="sexe" value="Homme">
+                <label for="homme">Homme</label>
+                <input type="radio" id="femme" name="sexe" value="Femme">
+                <label for="femme">Femme</label>
+                <input type="radio" id="autre" name="sexe" value="Autre">
+                <label for="autre">Autre</label>
+            </div>
+
+            <div>
+                <label for="civilite">Civilité:</label>
+                <select id="civilite" name="civilite">
+                    <option value="M.">M.</option>
+                    <option value="Mme.">Mme.</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" pattern="[a-zA-Z]{2,}" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+
+            <div>
+                <label for="website">Site Web:</label>
+                <input type="url" id="website" name="website" required>
+            </div>
+
+            <div>
+                <label for="dob">Date de Naissance:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="hobbies">Hobbies:</label>
+                <input type="checkbox" id="jeuxVideo" name="hobbies" value="Jeux video">
+                <label for="jeuxVideo">Jeux video</label>
+                <input type="checkbox" id="cinema" name="hobbies" value="Cinema">
+                <label for="cinema">Cinema</label>
+                <input type="checkbox" id="lecture" name="hobbies" value="Lecture">
+                <label for="lecture">Lecture</label>
+                <input type="checkbox" id="sport" name="hobbies" value="Sport">
+                <label for="sport">Sport</label>
+                <input type="checkbox" id="informatique" name="hobbies" value="Informatique">
+                <label for="informatique">Informatique</label>
+            </div>
+
+            <input type="hidden" id="token" name="token" value="my first website">
+
+            <div>
+                <input type="submit" value="Validation">
+            </div>
+
+        </form>
+    </body>
+</html>
