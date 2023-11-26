@@ -25,7 +25,7 @@
             </div>
         </header>
         <!--MAIN-->
-        <form action="my_form.html" method="POST">
+        <form action="my_form.html" method="POST" id="form">
 
             <div>
                 <label for="sexe">Sexe:</label>
@@ -35,6 +35,7 @@
                 <label for="femme">Femme</label>
                 <input type="radio" id="autre" name="sexe" value="Autre">
                 <label for="autre">Autre</label>
+                
             </div>
 
             <div>
@@ -47,22 +48,26 @@
 
             <div>
                 <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" pattern="[a-zA-Z]{2,}" required>
+                <input type="text" id="nom" name="nom" pattern="[a-zA-Z]{2,}">
+
             </div>
 
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
             </div>
 
             <div>
                 <label for="telephone">Téléphone:</label>
                 <input type="tel" id="telephone" name="telephone" required>
+
             </div>
 
             <div>
                 <label for="website">Site Web:</label>
-                <input type="url" id="website" name="website" required>
+                <input type="url" id="website" name="website">
+
             </div>
 
             <div>
@@ -87,9 +92,10 @@
             <input type="hidden" id="token" name="token" value="my first website">
 
             <div>
-                <input type="submit" value="Validation">
+                <input type="button" onclick="Fvalid()" value="Validation">
             </div>
 
         </form>
     </body>
+    <script src="../JS/scriptfrom.js"></script>
 </html>
